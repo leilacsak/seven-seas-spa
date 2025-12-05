@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 /* General Styles */
 
+body {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 h1,
 h2,
 h3 {
