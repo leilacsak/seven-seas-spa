@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+.hero-section h1 {
+  font-family: "Handlee", cursive;
+}
+
 /* Navbar */
 .navbar .navbar-brand,
 .navbar .nav-link {
@@ -10,6 +16,48 @@
   font-weight: bold;
 }
 
-.nav-link.active {
+.nav-link .active {
   font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  /* overlay gradient + image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero-image.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffebd4;
+  padding: 8rem 0;
+  min-height: 60vh;
+}
+
+/*MEDIA QUERIES */
+
+/* Adjust spacing and scaling on smaller screens */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 6rem 0;
+    min-height: 50vh;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 3.5rem 1rem;
+    min-height: 40vh;
+    background-position: center top;
+  }
+
+  /* optional text sizing tweaks if you have headings/paragraphs inside */
+  .hero-section h1 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
 }
