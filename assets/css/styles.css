@@ -105,3 +105,25 @@ h3 {
     font-size: 1rem;
   }
 }
+
+/* Prevent sticky navbar from covering anchor targets */
+:root {
+  /* adjust this if your navbar height changes */
+  --navbar-height: 70px;
+}
+
+/* Preferred: ensure browser scrolls with padding for fixed/sticky headers */
+html {
+  scroll-padding-top: var(--navbar-height);
+}
+
+/* Fallback / per-element offset for headings/sections */
+header,
+section {
+  scroll-margin-top: calc(var(--navbar-height) + 8px);
+}
+
+/* Ensure sticky navbar sits above content when scrolling */
+.navbar.sticky-top {
+  z-index: 1030;
+}
