@@ -58,6 +58,15 @@ h3 {
   display: block;
 }
 
+/* Testimonials */
+#testimonials img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
 /* Adjust spacing and scaling on smaller screens */
 @media (max-width: 992px) {
   .hero-section {
