@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+/* General Styles */
 
-.hero-section h1 {
+h1,
+h2,
+h3 {
   font-family: "Handlee", cursive;
 }
 
@@ -33,7 +36,27 @@
   min-height: 60vh;
 }
 
-/*MEDIA QUERIES */
+/*Servic */
+/* Card shadow: subtle default + stronger on hover */
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Services: card images fixed to 200px and cropped nicely */ /*MEDIA QUERIES */
+.services .card img,
+.services .card .card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 /* Adjust spacing and scaling on smaller screens */
 @media (max-width: 992px) {
