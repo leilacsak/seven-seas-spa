@@ -1,0 +1,19 @@
+/* Navbar */
+.navbar {
+  background-color: #ffffff !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #3b2f2f !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #2e2525 !important;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
