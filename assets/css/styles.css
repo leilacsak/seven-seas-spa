@@ -67,6 +67,13 @@ h3 {
   display: block;
 }
 
+/*Footer*/
+#website-footer,
+#website-footer i {
+  background-color: #6f4e37;
+  color: #ffebd4;
+}
+
 /* Adjust spacing and scaling on smaller screens */
 @media (max-width: 992px) {
   .hero-section {
